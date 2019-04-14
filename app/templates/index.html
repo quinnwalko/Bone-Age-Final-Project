@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="../static/js/code.js"></script>
+    
+    <title>Machine Learning vs. Cervical Cancer</title>
+  </head>
+  <body>
+  
+    <div class="jumbotron hero-image">
+      <h1 class="display-4">Machine Learning vs. Cervical Cancer</h1>
+      <p class="lead">Can we build a model to predict cervical cancer risk based on subjective and objective medical information?</p>
+      <hr class="my-4" width="50%">
+      <button type="button" class="btn btn-outline-primary" value="intro" onclick="optionChanged(this.value)">Intro</button>
+      <!-- <button type="button" class="btn btn-outline-primary" value="rawData" onclick="optionChanged(this.value)">Raw Data</button> -->
+      <button type="button" class="btn btn-outline-primary" value="patientData" onclick="optionChanged(this.value)">Patient Data</button>
+      <button type="button" class="btn btn-outline-primary" value="visualizations" onclick="optionChanged(this.value)">Visualizations</button>
+      <button type="button" class="btn btn-outline-primary" value="modelDevelopment" onclick="optionChanged(this.value)">Model Development</button>
+      <!-- <button type="button" class="btn btn-outline-primary" value="exploreModel" onclick="optionChanged(this.value)">Explore Model</button> -->
+    </div>
+  
+    <div class="container" id="visualizations">
+      <p id="intro-text-1">Despite the possibility of prevention with regular screening, cervical cancer remains a significant cause of mortality in low-income countries, attributable in part to limited access and low adherence to routine cervical cancer screenings.</p>
+      <p id="intro-text-2">Even for patients who adhere to regular screening practices, proper diagnosis depends heavily on a doctor's training and expertise. With the advent of digital colposcopies, scientists are using machine learning techniques to analyze video from digital colposcopy to improve diagnostics and reduce human error.</p>
+      <p id="intro-text-3">We used the <a href="https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29">data</a> from one of these studies, which was generously donated to the <a href="https://archive.ics.uci.edu/ml/index.php">UCI Machine Learning Repository</a>. The data was collected at Hospital Universitario de Caracas in Venezuela and consists of demographic information, habits, and historic medical records from 858 women.</p>
+      <p id="intro-text-4">We used this data to build a machine learning model to predict whether a person is at high or low risk of cervical cancer, which could be deployed as part of a medical app. While the dataset has significant weaknesses, our project demonstrates how this technology developed with more robust data can play a critical role in targeting high risk populations for cervical cancer screening programs and reducing the disease’s incidence and death rates.</p>
+      <p id="intro-text-5">Use the buttons above to view the raw data set, see individual patient data, see metadata on our sample population, learn how we developed our model, and explore the model by entering your own sample data.</p>
+    </div>
+      
+
+    <div id="footer">
+      <p>© 2019 Dream Team</p>
+    </div>
+  </body>
+</html>

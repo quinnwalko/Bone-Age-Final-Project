@@ -1,0 +1,72 @@
+body {
+    padding-bottom: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.row {
+    padding: 10px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#visualizations {
+    text-align: center;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Set the fixed height of the footer here */
+    height: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+  
+#footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.hero-image {
+    background-image: url('../images/zoomed-out-cells-transparent.jpg');
+    background-color: #fdfdfd;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+#visuals-row-2 {
+    background-color: lightgrey;
+}
+
+#bubble {
+    background-color: lightgray;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto !important;
+}
+
+#risk-pie-img {
+    max-width: 275px;
+    height: auto;
+    padding: 10px;
+}
+
+#risk-summary-col {
+    text-align: left !important;
+}
+
+#modelDev-desc {
+    font-size: 16px;
+}
